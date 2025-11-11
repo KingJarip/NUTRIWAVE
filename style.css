@@ -1,0 +1,40 @@
+
+body { font-family: Arial; margin:0; background:#f8f8f8; }
+header { background:#fff; box-shadow:0 3px 10px rgba(0,0,0,0.1); }
+.nav-container { display:flex; justify-content:space-between; padding:10px 20px; }
+.logo { height:60px; }
+
+nav a { margin-left:15px; text-decoration:none; color:#004b4a; font-weight:bold; }
+
+.hero { display:flex; align-items:center; justify-content:space-between; padding:40px; background:#e8f9f7; }
+.hero-text { max-width:50%; }
+.btn { background:#008b85; color:#fff; padding:10px 18px; border-radius:6px; text-decoration:none; }
+.hero-img { width:320px; border-radius:10px; }
+
+.features { padding:40px; }
+.feature-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px;}
+.feature-card { padding:20px; background:#fff; text-align:center; border-radius:10px; }
+
+.product-page { padding:40px; }
+.product-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+.product-card { background:#fff; padding:10px; border-radius:10px; text-align:center; }
+
+.contact-section { padding:40px; }
+.contact-form { display:flex; flex-direction:column; gap:10px; max-width:400px; }
+.contact-form input, .contact-form textarea { padding:10px; border-radius:6px; border:1px solid #ddd; }
+.contact-form button { padding:10px; background:#008b85; color:#fff; border:none; border-radius:6px; }
+
+.admin-dashboard { padding:40px; }
+.dashboard-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.dash-card { background:#fff; padding:20px; border-radius:10px; }
+
+footer { text-align:center; padding:20px; background:#004b4a; color:#fff; margin-top:30px; }
+
+/* Animations */
+.animate-fade { animation: fadein 1s ease; }
+.animate-slide { animation: slidein 1s ease; }
+.animate-zoom { animation: zoom 0.7s ease; }
+
+@keyframes fadein { from{opacity:0;} to{opacity:1;} }
+@keyframes slidein { from{transform:translateX(40px);} to{transform:translateX(0);} }
+@keyframes zoom { from{transform:scale(0.7);} to{transform:scale(1);} }
